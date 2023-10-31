@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html">
+    <link rel="preload" href="{{cssFile}}/img/{{img}}" as="image">
+    <link rel="preload" href="{{cssFile}}/nyan.ttf" as="font">
+    <link rel="preload" href="{{tou}}" as="image">
+    <link rel="stylesheet" href="{{cssFile}}/css.css" type="text/css">
+</head>
+
+<body style="background: url({{cssFile}}/img/{{img}}) no-repeat;">
+<style>
+body {
+    margin:0
+    }
+</style>
+    <div class="content">
+        <div class="left">
+            <img class="top" src="{{tou}}">
+            <span class="ni">{{name}}</span>
+            {{if uid===null}}
+            <span class="ni">欢迎回来~</span>
+            {{else}}
+            <span class="ni">欢迎回来，{{uid}}~</span>
+            {{/if}}
+            {{if index==-1}}
+            {{else}}
+            <span class="ni">今天是{{event_flag}}~</span>
+            {{/if}}
+            <div class="buttom">
+                <span class="ys">{{what}}</span>
+                <span class="rps" style="color: rgb({{r}}, {{g}}, {{b}});">{{value}}</span>
+                <span class="rpz" style="color: rgb({{r}}, {{g}}, {{b}});">{{rp}}</span>
+                <span class="time">{{time}}</span>
+            </div>
+        </div>
+        {{if islogin==1}}
+        <div class="right">
+            <img class="already" src="{{cssFile}}/img1/login_flag.png">
+        </div>
+        {{else}}
+        {{if day < 10}}
+        {{if luckygold==underfind}}
+        {{if index=-1}}
+        <div class="jl">
+            <span class="ts">☆ 星星+{{bsstar}}</span>
+            <span class="ts">☆ 金币+{{bsgold}}</span>
+        </div>
+    </div>
+        {{else}}
+        <div class="right">
+            <img class="im" src="{{cssFile}}/img1/extra_bonus.png">
+            <span class="enw">☆ 幸运币+{{luckygold}} (人品)</span>
+            <div class="jl">
+                <span class="ts">☆ 星星+{{bsstar}}</span>
+                <span class="ts">☆ 金币+{{bsgold}}</span>
+                <span class="ts">☆ 幸运币+{{luckygold}}</span>
+            </div>
+    </div>
+    {{/if}}
+    {{else}}
+    <div class="right">
+        <img class="im" src="{{cssFile}}/img1/extra_bonus.png">
+        <span class="enw">☆ 星星+{{event_star}} (节日)</span>
+        <span class="enw">☆ 金币+{{event_gold}} (节日)</span>
+        <div class="jl">
+            <span class="ts">☆ 星星+{{evstar}}</span>
+            <span class="ts">☆ 金币+{{evgold}}</span>
+        </div>
+    </div>
+    </div>
+    {{/if}}
+    {{else}}
+    {{if luckygold==underfind}}
+    {{if index==-1}}
+    <div class="right">
+        <img class="im" src="{{cssFile}}/img1/extra_bonus.png">
+        <span class="enw">☆ 星星+{{star_add}} (累签)</span>
+        <span class="enw">☆ 金币+{{gold_add}} (累签)</span>
+        <div class="jl">
+            <span class="ts">☆ 星星+{{bsstar}}</span>
+            <span class="ts">☆ 金币+{{bsgold}}</span>
+        </div>
+    </div>
+    {{else}}
+    <div class="right">
+        <img class="im" src="{{cssFile}}/img1/extra_bonus.png">
+        <span class="enw">☆ 星星+{{event_star}} (节日)</span>
+        <span class="enw">☆ 金币+{{event_gold}} (节日)</span>
+        <span class="enw">☆ 星星+{{star_add}} (累签)</span>
+        <span class="enw">☆ 金币+{{gold_add}} (累签)</span>
+        <div class="jl">
+            <span class="ts">☆ 星星+{{evstar}}</span>
+            <span class="ts">☆ 金币+{{evgold}}</span>
+        </div>
+    </div>
+    </div>
+    {{/if}}
+    {{else}}
+    {{if index==-1}}
+    <div class="right">
+        <img class="im" src="{{cssFile}}/img1/extra_bonus.png">
+        <span class="enw">☆ 幸运币+{{luckygold}} (人品)</span>
+        <span class="enw">☆ 星星+{{star_add}} (累签)</span>
+        <span class="enw">☆ 金币+{{gold_add}} (累签)</span>
+        <div class="jl">
+            <span class="ts">☆ 星星+{{bsstar}}</span>
+            <span class="ts">☆ 金币+{{bsgold}}</span>
+            <span class="ts">☆ 幸运币+{{luckygold}}</span>
+        </div>
+    </div>
+    {{else}}
+    <div class="right">
+        <img class="im" src="{{cssFile}}/img1/extra_bonus.png">
+        <span class="enw">☆ 星星+{{event_star}} (节日)</span>
+        <span class="enw">☆ 金币+{{event_gold}} (节日)</span>
+        <span class="enw">☆ 幸运币+{{luckygold}} (人品)</span>
+        <span class="enw">☆ 星星+{{star_add}} (累签)</span>
+        <span class="enw">☆ 金币+{{gold_add}} (累签)</span>
+        <div class="jl">
+            <span class="ts">☆ 星星+{{evstar}}</span>
+            <span class="ts">☆ 金币+{{evgold}}</span>
+            <span class="ts">☆ 幸运币+{{luckygold}}</span>
+        </div>
+    </div>
+    </div>
+    {{/if}}
+    {{/if}}
+    {{/if}}
+    {{/if}}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "ny";
+    src: url(./nyan.ttf);
+}
+@font-face {
+    font-family: "HY";
+    src: url(./HYShiGuangTiW_0.ttf);
+}
+
+body{
+    font-family: "HY";
+    width: 960px;
+    height: 540px;
+    font-size: 30px;
+}
+span{
+    position: relative;
+    display: block;
+}
+.content{
+    width: 950px;
+    height: 530px;
+}
+.top{
+    height: 95px;
+    border-radius: 50%;
+    position: relative;
+    top: 16px;
+    left: 17px;
+}
+.rps,.rpz,.ys,.time{
+    text-align: center;
+    width: 420px;
+}
+.ys{
+    margin-bottom: 45px;
+}
+.rps{
+    font-family: "ny";
+    font-size: 50px;
+}
+.rpz{
+    margin-top: 10px;
+}
+.time{
+    position: absolute;
+    bottom: 5px;
+    font-family: "ny";
+}
+.left{
+    width: 380px;
+    float: left;
+    color: rgb(80,86,151);
+}
+.right{
+    height: 540px;
+    width: 570px;
+    float: right;
+    color: rgb(80,86,151);
+}
+.right img{
+    position: relative;
+    display: block;
+}
+.already{
+    position: relative;
+    top: 150px;
+}
+.enw,.ts{
+    margin-left: 170px;
+    color: rgb(80,86,151);
+}
+.jl{
+    position: absolute;
+    width: 321px;
+    height: 260px;
+    background: url(./img1/text_block_new.png) no-repeat;
+    top: 210px;
+    left: 500px;
+    color: rgb(80,86,151);
+}
+.ts{
+    margin-left: 85px;
+    top: 80px;
+}
+.ni{
+    margin-bottom: 10px;
+    left: 180px;
+    top: -70px;
+}
+.im{
+    left: 120px;
+}
+.buttom{
+    position: absolute;
+    top: 255px;
+    height: 285px;
+    color: rgb(80,86,151);
+}

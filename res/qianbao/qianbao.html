@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html">
+    <link rel="stylesheet" href="{{cssFile}}/qianbao.css" type="text/css">
+</head>
+<body>
+    <div class="content" style="background: url({{cssFile}}/img/{{img}});">
+        <img class="top" src="{{tou}}">
+        <span class="name">{{name}}的钱包</span>
+        {{if uid===null}}
+        <span class="name">{{uid}}的钱包</span>
+        {{/if}}
+        <span class="yi">星星 {{star}}颗</span>
+        <span class="er">金币 {{gold}}枚</span>
+        <span class="san">幸运币 {{luckygold}}枚</span>
+    </div>
+</body>
+</html>

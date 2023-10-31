@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "yz";
+    src: url("../../../../plugins/Icepray/res/font/yz.ttf")
+}
+*{margin:0;padding:0;}
+
+body{
+    transform: scale(2);
+    margin-left: 500px;
+    margin-top: 200px;
+    width: 640px;
+    height: 330px;
+}
+
+.content{
+    width: 640px;
+    height: 330px;
+}
+.top{
+    height: 75px;
+    position: relative;
+    top: 22px;
+    left: 22px;
+    border-radius: 50%;
+}
+span{
+    display: block;
+    font-size: 30px;
+    font-family: "yz";
+    color: rgb(129, 102, 100);
+}
+.name{
+    display: inline-block;
+    position: relative;
+    left: 30px;
+}
+.yi{
+    position: relative;
+    top: 54px;
+    left: 155px;
+}
+.er{
+    position: relative;
+    top: 76px;
+    left: 272px;
+}
+.san{
+    position: relative;
+    top: 105px;
+    left: 96px;
+}
